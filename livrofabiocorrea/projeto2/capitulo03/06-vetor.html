@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor Exemplo</title>
+</head>
+
+<body>
+    <h1>EXEMPLO DE LISTA DE VETOR</h1>
+    <h3>Adiciona um ou mais elementos no final</h3>
+    <p id="teste1">Sem push:</p>
+    <p id="teste2">Com push:</p>
+
+    <script>
+
+        // Criando o vetor
+
+        var vetor = [1, 2, 3, 4, 5];
+
+        // Mostrando o vetor no Id chamado ‘teste1’.
+
+        document.getElementById('teste1').innerHTML += vetor;
+
+
+        // Adicionando elementos no final do vetor
+
+        vetor.push(6, 7);
+
+        // Mostrando novamente o vetor, agora com os elementos adicionados no final.
+
+        document.getElementById('teste2').innerHTML += vetor;
+
+
+    </script>
+
+</body>
+
+</html>

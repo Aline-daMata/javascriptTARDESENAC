@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Escolha</title>
+</head>
+
+<body>
+
+    <h1>Estrutura Condicional Escolha</h1>
+    <p id="teste"></p>
+
+    <script>
+        //Criando a variável 
+
+        media = 6;
+
+        var resultado = '';
+
+
+        // Condicional ternário
+
+        var resultado = (media >= 7) ? 'Aprovado(a)!' :
+            (media >= 6) ? 'Recuperação!' :
+                'Reprovado(a)!';
+
+        // Mostrando o resultado
+        document.getElementById('teste').innerHTML = resultado;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra 2 capitulo 8</title>
+</head>
+<body>
+    <h1>Exercício extra 16</h1>
+    <p id="resultado">Cálculo da sua idade: <br></p>
+
+    <script type="text/javascript">              //não lembro de ter usado
+        // váriaveis
+        var nome='';
+        var idade=0;
+        var vezes=0;
+        maioridade ='';
+
+        // a função
+        function calculo(){
+            nome = prompt('Digite seu nome: ','');
+            while (nome=='') {
+                alert('Nome não pode ser vazio!');
+                nome = prompt('Digite nome correto: ','');
+                }
+            maioridade = prompt('Você é maior de idade? (S) sim (N) não ','');
+			maioridade = maioridade.toLowerCase(); // toLower minusculo
+            idade = parseInt(prompt('Qual sua idade? '));
+
+            if (maioridade == 's'){
+                if (idade <18){   //se é maior a idade não pode ser < 18
+                    alert('Idade errada');
+                    idade = parseInt(prompt('Insira idade correta'));
+                }
+                idade=idade*3;
+            }
+            else{
+                if (idade >=18){ //se é menor, a idade não pode ser >= 18
+                    alert('Idade errada');
+                    idade = parseInt(prompt('Insira idade correta'));
+                }
+                idade=idade*2;
+            }
+            document.getElementById('resultado').innerHTML += nome + ', seu calculo é: ' + idade ;
+        }
+        calculo();
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+RESUMO AULA JAVASCRIPT 05-18/11/2026
+
+Este projeto foi um ótimo exemplo 
+de utilização das matérias estudadas 
+em aula.
+.Foi utilizado o método Array, para acoplar
+o grupo de imagens selecionadas.
+.Seleção de elementos DOM com 'document.querySelector' 
+e controle do estado das imagens com 'document.querySelectorAll'.
+.Carregamento dinâmico com função ('carregarImagens') e 
+injeção com innerHTML.
+.Lógica de navegação e loop com front com os botões 
+'anterior' e 'próximo' 
+.Além do evento de interação 'addEventListener', essencial 
+pra integraçãode itens.
+
+Creio que o projeto 'slideshow' nos ajuda a integrar 
+grande parte das matérias ensinadas no decorrer do
+curso, nos dando uma boa abrangência de como fundir 
+cada fórmula de código por si.

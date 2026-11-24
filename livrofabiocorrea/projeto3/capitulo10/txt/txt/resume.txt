@@ -1,0 +1,1 @@
+A funcionalidade DOM, utlizada na aula e no livro,

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício extra 20</title>
+    <style>
+        /* Quadrado vermelho de 50px x 50px */
+        #quadrado {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            left: 0;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício extra 20</h1>
+
+    <div id="quadrado"></div>
+
+    <button onclick="vai()">Vai</button>
+    <button onclick="volta()">Volta</button>
+
+    <script>
+        // Busca a div que será movida
+        var quadrado = document.getElementById('quadrado');
+
+        // Posição atual da div (em pixels, a partir da esquerda)
+        var posicao = 0;
+
+        // Guarda o id do setInterval para poder parar a animação
+        var id = null;
+
+        // Função que faz a div deslizar para a direita
+        function vai() {
+            // Para qualquer animação que esteja rodando
+            clearInterval(id);
+
+            // Limite: largura da tela menos o tamanho da div e uma margem de segurança
+            var limite = window.innerWidth - 50 - 40;
+
+            id = setInterval(function () {
+                if (posicao >= limite) {
+                    // Chegou perto do fim da tela: para
+                    clearInterval(id);
+                } else {
+                    // Anda 2px para a direita
+                    posicao = posicao + 2;
+                    quadrado.style.left = posicao + 'px';
+                }
+            }, 5);
+        }
+
+        // Função que faz a div voltar para a esquerda
+        function volta() {
+            // Para qualquer animação que esteja rodando
+            clearInterval(id);
+
+            id = setInterval(function () {
+                if (posicao <= 0) {
+                    // Chegou ao início: para
+                    clearInterval(id);
+                } else {
+                    // Anda 2px para a esquerda
+                    posicao = posicao - 2;
+                    quadrado.style.left = posicao + 'px';
+                }
+            }, 5);
+        }
+    </script>
+</body>
+</html>

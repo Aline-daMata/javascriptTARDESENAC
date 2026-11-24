@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercício extra 13</title>
+</head>
+<body>
+    <h1>Exercício extra 13</h1>
+    <p id="resultado"></p>
+
+    <script>
+        // Criando as variáveis
+        var resposta = '';
+        var cont = 0;
+        var numero = parseInt(prompt('Digite um número de 1 a 30:'));
+
+        // Validando o número informado
+        if(isNaN(numero) || numero < 1 || numero > 30){
+            resposta = 'Número inválido! Recarregue a página e digite um número de 1 a 30.';
+        } else {
+            // Criando o laço de repetição
+            for(cont = 1; cont <= 30; cont++){
+                if(cont === numero){
+                    continue; // pula o número informado
+                }
+                resposta += 'Número: ' + cont + '<br />';
+            }
+        }
+        document.getElementById('resultado').innerHTML = resposta;
+    </script>
+</body>
+</html>

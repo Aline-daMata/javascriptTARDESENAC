@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio extra 01 cap 09</title>
+</head>
+<body>
+    <h1>Exercício extra 17</h1>
+    <p id="resultado"></p>
+    <script>
+        var computador = {
+            processador: 'Intel core i7',
+            memoria: '16 GB',
+            ssd: '500 gb',
+            motherboard: 'Asus TUF GAMMING B550M',
+            fonte: '600 W',
+            pcCompleto: function(){
+                return 'Processador: ' + this.processador + '<br>' +
+                        'Memória: ' + this.memoria + '<br>' + 
+                        'SSD: ' + this.ssd + '<br>' + 
+                        'Placa Mãe: ' + this.motherboard+ '<br>' +
+                        'Fonte: ' + this.fonte; 
+            }
+        }
+        document.write (computador.pcCompleto()); //chama a funçao dentro do objeto
+    </script>
+    
+</body>
+</html>

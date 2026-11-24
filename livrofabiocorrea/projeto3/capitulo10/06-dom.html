@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM - Remover elementos</title>
+</head>
+<body>
+    <h1>DOM - Removendo elementos</h1>
+    <ul>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Item errado</li>
+        <li>Terceiro</li>
+    </ul>
+
+    <script>
+        // Obtendo os elementos
+        var lista = document.getElementsByTagName('ul')[0];
+        var itens = lista.getElementsByTagName('li');
+
+        // Removendo um elemento específico
+        lista.removeChild(itens[2]);
+    </script>
+</body>
+</html>

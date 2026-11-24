@@ -1,0 +1,220 @@
+7
+
+Controle de fluxo
+Objetivo
+
+Neste capítulo, você vai aprender a otimizar o desempenho dos programas por meio dos comandos break e continue, pois nem sempre será desejado que todas as instruções de um laço de repetição sejam executadas até o fim.
+Flexibilidade e controle sobre os algoritmos
+À medida que seus programas se tornam mais complexos, surge a necessidade de ter um maior controle sobre o fluxo de execução. Ou seja, nem sempre queremos que todas as instruções de um laço sejam executadas até o fim. Às vezes, é preciso interromper uma repetição antes do tempo ou pular uma parte do código dentro de um laço quando uma condição específica for atendida.
+
+Para isso, o JavaScript oferece duas ferramentas muito úteis: os comandos break e continue.
+
+Break: serve para interromper imediatamente a execução de um laço, encerrando-o completamente assim que uma condição for atendida.
+Continue: pula a iteração atual do laço e segue para a próxima repetição, ignorando o restante do código dentro daquele ciclo específico.
+Esses comandos são frequentemente usados dentro de estruturas de repetição, como o FOR, o WHILE ou o DO...WHILE, para garantir que o programa reaja de maneira inteligente a determinadas situações.
+
+Comando break
+Exemplo teórico
+Imagine que você está percorrendo uma lista de produtos em busca de um item específico. Assim que encontrá-lo, não é necessário continuar a busca. Nesse caso, o break pode ser usado para interromper o laço assim que o item for localizado, economizando tempo e processamento.
+
+Exemplo prático
+“Ao procurar um livro em uma estante, assim que encontrá-lo, pare de procurar.”
+
+Comando continue
+Exemplo teórico
+Suponha que você esteja exibindo números de 1 a 10, mas deseje pular os números pares. O continue pode ser utilizado para ignorar os pares e seguir direto para o próximo número ímpar, sem encerrar o laço.
+
+Exemplo prático
+“Durante a leitura de um artigo, você pula parágrafos que já conhece e continua a leitura apenas dos novos trechos.”
+
+Atividades
+Atividade 1 – Conhecer o comando break
+Abra o arquivo 01-break.html localizado na pasta 07-controle-de-fluxo.
+Clique na linha 13 para iniciar o código JavaScript. Lembre-se de indentar o código pressionando a tecla Tab uma vez para posicionar o cursor.
+Confira a seguir:
+
+Digite o código abaixo:
+// Criando as variáveis
+
+var resposta = ‘’;
+
+var cont = 0
+
+Pule uma linha, continue com os códigos abaixo:
+// Criando o laço de repetição
+
+for(cont = 0; cont <= 10; cont++) {
+
+if(cont === 8) {
+
+break;
+
+}
+
+resposta += ‘O valor da variável é: ‘ + cont + ‘<br>’;
+
+}
+
+document.getElementById(‘teste’).innerHTML = resposta;
+
+Salve o arquivo.
+Confira a seguir:
+
+O objetivo deste script é mostrar o valor da variável cont a cada iteração do laço de repetição, porém, se o valor da variável cont for igual a 8, o laço será interrompido. Essa informação está a partir da linha 19, com o condicional: if(cont === 8) e, na linha 20, o comando break, que interrompe o script.
+Para executar, abra a pasta 07-controle-de-fluxo e clique duas vezes no arquivo 01-break.html.
+Confira a figura 7.1:
+Figura 7.1. Controle de fluxo – break
+
+
+Veja que o script só fez a impressão até a variável cont chegar a 7. Quando ela atingiu o valor 8, o script foi interrompido.
+Atividade 2 – Conhecer o comando continue
+Abra o arquivo 02-continue.html localizado na pasta 07-controle-de-fluxo.
+Clique na linha 13 para iniciar o código JavaScript. Lembre-se de indentar o código pressionando a tecla Tab uma vez para posicionar o cursor.
+Confira a seguir:
+
+Digite o código abaixo:
+// Criando as variáveis
+
+var resposta = ‘’;
+
+var cont = 0
+
+Pule uma linha, continue com os códigos abaixo:
+// Criando o laço de repetição
+
+for(cont = 0; cont <= 10; cont++) {
+
+if(cont === 8) {
+
+continue;
+
+}
+
+resposta += ‘O valor da variável é: ‘ + cont + ‘<br>’;
+
+}
+
+document.getElementById(‘teste’).innerHTML = resposta;
+
+Salve o arquivo.
+Confira a seguir:
+
+O objetivo desse script é semelhante ao da atividade anterior, porém agora, quando o valor da variável cont for igual a 8, o laço pula a execução do comando que está logo abaixo, no caso, a impressão na tela do valor da variável 8. Essa informação está a partir da linha 19, com o condicional: if(cont === 8), e na linha 20, o comando continue, que pula o script.
+Para executar, abra a pasta 07-controle-de-fluxo e clique duas vezes no arquivo 02-continue.html.
+Confira a figura 7.2:
+Figura 7.2. Controle de fluxo – continue
+
+
+Veja que o script fez a impressão até a variável cont chegar a 7. Quando ela atingiu o valor 8, o script pulou a impressão e voltou a imprimir a partir do valor de cont = 9.
+Pronto, dois comandos simples e de fácil aplicação, mas com grandes possibilidades de uso. Você concluiu mais um capítulo!
+
+Exercícios extras
+Crie um arquivo chamado cap07-extra-01.html na pasta exercicios-extras.
+Crie a marcação HTML padrão.
+Crie o título Exercício extra 13 usando a tag h1 em HTML.
+Crie um parágrafo com um Id chamado resultado sem nenhum texto.
+Crie um script que solicite ao usuário um número de 1 a 30.
+O script deverá mostrar todos os números, menos o número informado.
+Crie um arquivo chamado cap07-extra-02.html na pasta exercicios-extras.
+Crie a marcação HTML padrão.
+Crie o título Exercício extra 14 usando a tag h1 em HTML.
+Crie um parágrafo com um Id chamado resultado sem nenhum texto.
+Crie um script que solicite ao usuário um número de 1 a 30.
+O script deverá mostrar todos os números até um número antes do informado.
+Síntese do aprendizado
+Neste capítulo, você aprendeu que nem sempre é necessário ou desejado executar todas as instruções de um laço de repetição até o fim. Em muitas situações, é importante ter um controle mais preciso sobre o fluxo de execução do programa, e é aí que entram os comandos break e continue.
+
+O comando break permite interromper completamente a execução de um laço, encerrando-o assim que uma condição específica é atendida. Ele é útil, por exemplo, quando você já encontrou o que procurava dentro de uma repetição e não precisa continuar.
+
+Já o comando continue possibilita pular a iteração atual do laço e partir diretamente para a próxima, ignorando o restante do bloco de código naquele ciclo. Isso é ideal para evitar executar determinadas instruções quando certas condições forem verdadeiras, sem precisar encerrar o laço.
+
+Com esses dois comandos, você passou a ter mais flexibilidade e controle sobre seus algoritmos, otimizando o desempenho e tornando os programas mais inteligentes e eficientes. Agora, suas estruturas de repetição estão mais poderosas e adaptáveis a diferentes situações!
+"Crie a marcação HTML padrão.
+Crie o título Exercício extra 14 usando a tag h1 em HTML.
+Crie um parágrafo com um Id chamado resultado sem nenhum texto.
+Crie um script que solicite ao usuário um número de 1 a 30.
+O script deverá mostrar todos os números até um número antes do informado."
+ "Veja que o script fez a impressão até a variável cont chegar a 7. Quando ela atingiu o valor 8, o script pulou a impressão e voltou a imprimir a partir do valor de cont = 9.
+Pronto, dois comandos simples e de fácil aplicação, mas com grandes possibilidades de uso. Você concluiu mais um capítulo!
+Crie um arquivo chamado cap07-extra-02.html na pasta exercicios-extras."
+"Digite o código abaixo:
+// Criando as variáveis
+
+var resposta = ‘’;
+
+var cont = 0
+
+Pule uma linha, continue com os códigos abaixo:
+// Criando o laço de repetição
+
+for(cont = 0; cont <= 10; cont++) {
+
+if(cont === 8) {
+
+continue;
+
+}
+
+resposta += ‘O valor da variável é: ‘ + cont + ‘<br>’;
+
+}
+
+document.getElementById(‘teste’).innerHTML = resposta;
+"COMANDO BREAK
+Exemplo teórico
+Imagine que você está percorrendo uma lista de produtos em busca de um item específico. Assim que encontrá-lo, não é necessário continuar a busca. Nesse caso, o break pode ser usado para interromper o laço assim que o item for localizado, economizando tempo e processamento.
+
+Exemplo prático
+“Ao procurar um livro em uma estante, assim que encontrá-lo, pare de procurar.”
+
+COMANDO CONTINUE
+Exemplo teórico
+Suponha que você esteja exibindo números de 1 a 10, mas deseje pular os números pares. O continue pode ser utilizado para ignorar os pares e seguir direto para o próximo número ímpar, sem encerrar o laço.
+
+Exemplo prático
+“Durante a leitura de um artigo, você pula parágrafos que já conhece e continua a leitura apenas dos novos trechos.”
+
+Atividades
+ATIVIDADE 1 – CONHECER O COMANDO BREAK
+Abra o arquivo 01-break.html localizado na pasta 07-controle-de-fluxo."
+
+
+"Digite o código abaixo:
+// Criando as variáveis
+
+var resposta = ‘’;
+
+var cont = 0
+
+Pule uma linha, continue com os códigos abaixo:
+// Criando o laço de repetição
+
+for(cont = 0; cont <= 10; cont++)
+
+if(cont === 8) {
+
+break;
+
+}"
+
+"O objetivo deste script é mostrar o valor da variável cont a cada iteração do laço de repetição, porém, se o valor da variável cont for igual a 8, o laço será interrompido. Essa informação está a partir da linha 19, com o condicional: if(cont === 8) e, na linha 20, o comando break, que interrompe o script.
+Para executar, abra a pasta 07-controle-de-fluxo e clique duas vezes no arquivo 01-break.html.
+"Veja que o script só fez a impressão até a variável cont chegar a 7. Quando ela atingiu o valor 8, o script foi interrompido.
+ATIVIDADE 2 – CONHECER O COMANDO CONTINUE
+Abra o arquivo 02-continue.html localizado na pasta 07-controle-de-fluxo.
+Clique na linha 13 para iniciar o código JavaScript. Lembre-se de indentar o código pressionando a tecla Tab uma vez para posicionar o cursor.
+Confira a seguir"
+
+     "O objetivo desse script é semelhante ao da atividade anterior, porém agora, quando o valor da variável cont for igual a 8, o laço pula a execução do comando que está logo abaixo, no caso, a impressão na tela do valor da variável 8. Essa informação está a partir da linha 19, com o condicional: if(cont === 8), e na linha 20, o comando continue, que pula o script.
+Para executar, abra a pasta 07-controle-de-fluxo e clique duas vezes no arquivo 02-continue.html.
+Exercícios extras
+Crie um arquivo chamado cap07-extra-01.html na pasta exercicios-extras.
+Crie a marcação HTML padrão.
+Crie o título Exercício extra 13 usando a tag h1 em HTML.
+Crie um parágrafo com um Id chamado resultado sem nenhum texto.
+Crie um script que solicite ao usuário um número de 1 a 30.
+O script deverá mostrar todos os números, menos o número informado.
+
+"
+      
+

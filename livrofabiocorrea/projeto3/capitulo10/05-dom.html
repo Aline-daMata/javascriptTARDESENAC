@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM - Inserir elementos com função</title>
+</head>
+<body>
+    <h1>DOM - Inserção de elementos com função</h1>
+    <ul>
+        <li>Terceiro</li>
+        <li>Quarto</li>
+        <li>Quinto</li>
+    </ul>
+
+    <script>
+        // Declarando a função
+        function criaElemento(tag, txt) {
+            var elemento = document.createElement(tag);
+            var texto = document.createTextNode(txt);
+            elemento.appendChild(texto);
+            return elemento;
+        }
+
+        // Criando os elementos
+        var li1 = criaElemento('li', 'Primeiro');
+        var li2 = criaElemento('li', 'Segundo');
+
+        // Buscando a lista
+        var lista = document.getElementsByTagName('ul')[0];
+
+        // Buscando os itens da lista
+        var itens = document.getElementsByTagName('li');
+
+        // Inserindo os elementos
+        lista.insertBefore(li2, itens[0]);
+        lista.insertBefore(li1, itens[0]);
+    </script>
+</body>
+</html>

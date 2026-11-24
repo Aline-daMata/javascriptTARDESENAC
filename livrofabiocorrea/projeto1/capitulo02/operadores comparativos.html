@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operadores comparativos</title>
+</head>
+<body>
+     <h1>operadores comparativos</h1>
+    <p id="test1">o valor de a e:</p>
+    <p id="test2">o valor de a e:</p>
+    <p id="test3">o valor de a e:</p>
+    <p id="test4">o valor de a e:</p>
+    <p id="test5">o valor de a e:</p>
+    <p id="test6">o valor de a e:</p>
+
+
+    <script>
+        //criacao das variaveis
+        var a = 1;
+        var b = 1;
+        var c = "1";
+        var d = 2;
+        //impressao das resultados
+        document.getElementById("test1").innerHTML += a == b;
+        document.getElementById("test2").innerHTML += a === c;
+        document.getElementById("test3").innerHTML += a === b;
+        document.getElementById("test4").innerHTML += a >= b;
+        document.getElementById("test5").innerHTML += a >= d;
+        document.getElementById("test6").innerHTML += a <= c;
+
+    </script>
+    
+</body>
+</html>
+
+<!-- Este projeto é muito interessante e possui vários detalhes importantes.
+
+Temos algumas linhas dentro das tags <p> no HTML, e todas elas exibem o valor de A. Mas o interessante é que, com os códigos JavaScript, podemos modificar o valor de cada elemento a qualquer momento, de maneira muito simples, com apenas uma pequena alteração.
+
+Podemos criar várias variáveis e, independentemente dos valores que elas tenham, mesmo que aparentemente sejam apenas números, podemos utilizar diferentes operadores de comparação para transformar esses valores em true ou false.
+
+Por exemplo, no JavaScript, podemos utilizar getElementById para acessar um elemento do documento HTML e selecionar o ID de uma das tags <p>. Depois, com innerHTML, podemos inserir nela qualquer valor que desejarmos.
+
+Se utilizarmos apenas o valor de uma única variável chamada A em todas essas tags e depois compararmos esse valor com outras variáveis por meio dos operadores de comparação, obteremos resultados diferentes. -->

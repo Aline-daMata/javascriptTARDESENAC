@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço FOR</title>
+</head>
+
+<body>
+    <h1>Laço de Repetição DO</h1>
+    <p id="tabuada"></p>
+
+    <script>
+
+
+        // Criando as variáveis
+
+        var num = 5;
+
+        var cont = 1;
+
+        var resposta = '';
+
+        do {
+
+            resposta += num + ' X ' + cont + ' = ' + (num * cont) + '<br>';
+
+            cont++;
+
+        }
+
+        while (cont <= 10);
+
+
+        // Mostrando a tabuada
+
+        document.getElementById('tabuada').innerHTML = resposta;
+
+
+    </script>
+
+</body>
+
+</html>

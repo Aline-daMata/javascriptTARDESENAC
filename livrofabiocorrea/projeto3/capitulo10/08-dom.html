@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM - onmousedown e onmouseup</title>
+</head>
+<body>
+    <h1>DOM - Eventos do mouse</h1>
+    <p>Segure o clique na lâmpada para acender.</p>
+
+    <img id="lampada" src="luz-apagada.gif" alt="Lâmpada"
+         onmousedown="Acende()" onmouseup="Apaga()">
+
+    <script>
+        // Declarando a função Acende
+        function Acende() {
+            document.getElementById('lampada').src = 'luz-acesa.gif';
+        }
+
+        // Declarando a função Apaga
+        function Apaga() {
+            document.getElementById('lampada').src = 'luz-apagada.gif';
+        }
+    </script>
+</body>
+</html>

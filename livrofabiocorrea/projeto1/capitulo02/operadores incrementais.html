@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operadores incrementais</title>
+</head>
+<body>
+    <h1>operadores incrementais</h1>
+    <p id="test1">o valor de a e:</p>
+    <p id="test2">o valor de b e:</p>
+    <p id="test3">o valor de c e:</p>
+    <p id="test4">o valor de d e:</p>
+
+    <script>
+        //criacao das variaveis
+        var a = 1;
+        var b = 1;
+        var c = 1;
+        var d = 5;
+
+        // o incremento antes aumenta antes
+        // o incremento depois aumenta depois
+
+        a = ++a;
+        b = b++;
+        d = --d;
+
+        for ( var cont = 1; cont <= 3; cont++){
+            c = c + cont ;
+        }
+
+        document.getElementById("test1").innerHTML += a;
+        document.getElementById("test2").innerHTML += b;
+        document.getElementById("test3").innerHTML += c;
+        document.getElementById("test4").innerHTML += d;
+    </script>
+</body>
+</html>
+
+<!-- Aqui, minha intenção foi demonstrar o funcionamento dos operadores de incremento e decremento, inclusive dentro de uma estrutura de repetição for.
+
+Quis mostrar qual é o comportamento desses operadores quando o ++ ou o -- aparece antes ou depois de uma variável e como eles funcionam dentro de um loop.
+
+Primeiramente, escrevi quatro textos dentro das tags <p>. Depois, no JavaScript, criei quatro variáveis, cujos valores seriam exibidos nas respectivas tags <p> do documento HTML.
+
+Mais abaixo, utilizei os operadores de decremento (--) e incremento (++) para modificar os valores dessas variáveis.
+
+Também coloquei uma das variáveis dentro de um loop for. A cada execução do loop, um valor é acrescentado a essa variável, utilizando o operador de incremento.
+
+Quando executamos esse código, conseguimos observar como os valores das variáveis são modificados.
+
+Existe também um detalhe muito importante: se não utilizarmos uma condição adequada de incremento ou decremento no loop, ele poderá se tornar infinito, fazendo com que a página trave. -->

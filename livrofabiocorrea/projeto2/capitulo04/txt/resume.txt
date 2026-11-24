@@ -1,0 +1,3 @@
+Os laços de repetição 'FOR', 'WHILE' e 'DO', são ferramentas fundamentais 
+para diversos sistemas maquinários hoje em dia, para haver
+menos erros em situações de exercicio de repetição.

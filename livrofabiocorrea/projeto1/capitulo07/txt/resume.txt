@@ -1,0 +1,30 @@
+7. Controle de fluxo
+Flexibilidade e controle sobre os algoritmos
+Comando break
+Comando continue
+Atividades
+Atividade 1 – Conhecer o comando break
+Atividade 2 – Conhecer o comando continue
+Exercícios extras
+Síntese do aprendizado"
+
+No capítulo 7 vemos o intuito de aprendizado voltado pro controle
+de fluxo do algoritmo
+Break: serve para interromper imediatamente a execução de um laço, 
+encerrando-o completamente assim que uma condição for atendida.
+Continue: pula a interação atual do laço e segue para a próxima repetição, 
+ignorando o restante do código dentro daquele ciclo específico.
+
+Como o código é em formato 'cascata', a ideia é que a codificação seja 
+contínua, podendo interromper ou pular alguma ação de forma limpa.
+
+      
+estudos-js-senac/
+├── capitulo-06-condicionais/
+│   ├── 01-par-impar.js
+│   ├── 02-calculadora-imc.js
+│   └── 03-dia-da-semana.js
+└── capitulo-07-fluxos/
+    ├── 01-tabuada.js
+    ├── 02-contador-pares.js
+    └── 03-validador-senha.js

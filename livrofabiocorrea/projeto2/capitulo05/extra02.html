@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício extra</title>
+</head>
+
+<body>
+    <h1>Exercício extra</h1>
+    <p id="resultado">A soma dos salários: </p>
+
+    <script>
+        let totalAnual = 0;
+        let paragrafo = document.getElementById("resultado");
+
+        for (let mes = 1; mes <= 12; mes++) {
+            let salarioMes = Number(prompt("Digite o salário do mês " + mes + " (ex.: 2500.50):").replace(",", "."));
+            totalAnual += salarioMes;
+        }
+
+        paragrafo.innerHTML += "R$ " + totalAnual.toFixed(2).replace(".", ",");
+    </script>
+</body>
+
+</html>

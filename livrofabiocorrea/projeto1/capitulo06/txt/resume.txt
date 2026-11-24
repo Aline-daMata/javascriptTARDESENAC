@@ -1,0 +1,44 @@
+"6. Estrutura condicional
+Estruturas condicionais em programação
+Atividades
+Atividade 1 – Conhecer a estrutura condicional simples
+Atividade 2 – Conhecer a estrutura condicional composta
+Atividade 3 – Conhecer a estrutura condicional ternário
+Atividade 4 – Conhecer a estrutura condicional escolha
+Exercícios extras
+Síntese do aprendizado"
+
+Atividade demonstra e testa htmls diferentes com cada tipo de 
+formula condicional do capitulo, sendo elas a simples, composta, 
+ternário e de escolha. 
+1.A estrutura simples seria a codificação 'elseif',
+onde se algo não acontecer na tela como sinalizado, deve aparecer uma 
+mensagem ou realizar outra ação como console.log
+2. Já a composta seria a condicional com dois 'if' e um 'else', onde
+se pode ter duas condições antes de erro
+3. A condição ternário é geralmente composta por elementos de duas 
+respostas na mesma ação como, se a media for >=7, 'aprovado';     
+ou  ! 'reprovado; 
+4. A condição de escolha, com o termo 'switch', onde se pode haver
+diversas opções, cada uma delas com uma mensagem, se mesmo assim algo
+diferente for escolhido, criar a opção 'default', com mensagem
+padrão de erro ou opção inválida.
+
+"Crie um arquivo chamado cap06-extra-01.html na pasta exercicios-extras.
+Crie a marcação HTML padrão.
+Crie o título Exercício extra 11 usando a tag h1 em HTML.
+Crie um parágrafo com um Id chamado resultado com o texto ‘Você é: ’.
+Crie um script que peça ao usuário para digitar a idade: ele deve verificar se a idade informada é maior ou menor de 18.
+Mostrar no parágrafo o texto: maior de idade ou menor de idade.
+Comente o código.
+Crie um arquivo chamado cap06-extra-02.html na pasta exercicios-extras.
+Crie a marcação HTML padrão.
+Crie o título Exercício extra 12 usando a tag h1 em HTML.
+Crie um parágrafo com um Id chamado resultado com o texto ‘Seu saldo é: ’.
+Crie um script que simule uma operação bancária, com as opções (1) Sacar e (2) Depositar em um prompt.
+Depois, crie outro prompt para que seja informado valor.
+No final, o script deve mostrar seu saldo. Antes das operações, seu saldo era de R$ 1.500,00.
+Comente seu código.
+Síntese do aprendizado"
+      
+

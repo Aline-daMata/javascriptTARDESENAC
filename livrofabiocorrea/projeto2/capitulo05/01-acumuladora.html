@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variável Acumuladora</title>
+</head>
+
+<body>
+    <h1>Variável Acumuladora</h1>
+    <p id="teste">Soma de todos os números:</p>
+
+    <script>
+
+        var cont = 1;
+
+        var total = 0;
+
+        var numero = 0;
+
+        // Informar ao usuário o que ele precisa fazer
+
+        alert('Digite 10 números aleatórios');
+
+        // Criando o laço de repetição
+
+        for (cont = 1; cont <= 10; cont++) {
+
+            numero = parseInt(prompt('Digite o ' + cont + 'o número', ''));
+
+            total = total + numero;
+
+        }
+
+
+        // Mostrando o resultado
+
+        document.getElementById('teste').innerHTML += total;
+
+
+
+
+    </script>
+
+</body>
+
+</html>

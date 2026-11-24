@@ -1,0 +1,4 @@
+A variável acumuladora, também vista em nossas aulas, é uma ferramenta
+essencial na linguagem da programação principalmente para verificação de 
+dados como em sistemas financeiros, marketplaces, etc. Armazenar resultados
+de forma limpa para que o sistema funcione sem complicações.

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra 1 capitulo 08</title>
+</head>
+<body>
+    <h1>Exercício extra 15</h1>
+    <p id="resultado"></p>
+    <script type="text/javascript"> // esse aqui é novo: script com entrada text javascript!
+    // as váriaveis:
+    var num = 0;
+    var vezes = 0;
+    var frase ='';
+
+    // perguntando ao usuário
+    function mostraTexto(){
+        num = parseInt(prompt('Insira um número entre 1 e 30',''));
+        for(vezes=1; vezes <= num; vezes++){
+            frase +='Programando em JavaScript <br>'; //armazenando a repetição
+        }
+	document.getElementById('resultado').innerHTML = frase; // imprimindo a repetição
+    }
+    mostraTexto();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor Exemplo</title>
+</head>
+
+<body>
+    <h1>EXEMPLO DE LISTA DE VETOR</h1>
+    <p id="teste"></p>
+
+    <script>
+
+        // Criando as variáveis para o código
+
+        var cores, resultado, fim, cont;
+
+        cores = ['Verde', 'Amarelo', 'Azul', 'Branco'];
+
+        fim = cores.length;
+
+
+        resultado = '<ul>';
+
+        for (cont = 0; cont < fim; cont++) {
+
+            resultado += '<li>' + cores[cont] + '</li>';
+
+        }
+
+        resultado += '</ul>';
+
+
+        document.getElementById('teste').innerHTML = resultado;
+
+    </script>
+
+</body>
+
+</html>

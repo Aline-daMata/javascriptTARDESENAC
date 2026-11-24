@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operadores logicos</title>
+</head>
+<body>
+    <h1>operadores logicos</h1>
+    <h3>logicos && (e)</h3>
+ 
+    <script>
+ 
+        var resposta = true && true;
+        document.write(resposta + "<br>");
+ 
+        resposta = false && false;
+        document.write(resposta + "<br>");
+ 
+        resposta = false && true;
+        document.write(resposta + "<br>");
+ 
+        resposta = true && (3=== 4);
+        document.write(resposta + "<br>");
+ 
+        resposta = "senac" && "javascript";
+        document.write(resposta + "<br>");
+ 
+        resposta = false && "senac";
+        document.write(resposta + "<br>");
+ 
+        resposta = 'senac' && false;
+        document.write(resposta + "<br>");
+ 
+        resposta = '' && false;
+        document.write(resposta + "<br>");
+ 
+        resposta = false && '';
+        document.write(resposta + "<br>");
+ 
+ 
+    </script>
+     <h3> logico || (ou)</h3>
+ 
+     <script>
+ 
+        var resposta = true || true;
+        document.write(resposta + "<br>");
+ 
+         resposta = false || true;
+        document.write(resposta + "<br>");
+ 
+        resposta = false || (3=== 4);
+        document.write(resposta + "<br>");
+ 
+         resposta = "senac" || "javascript";
+        document.write(resposta + "<br>");
+ 
+     </script>
+ 
+     <h3>operador ! (not - nao)</h3>
+ 
+     <script>
+ 
+          var resposta = !true;
+        document.write(resposta + "<br>");
+ 
+        resposta = !false;
+        document.write(resposta + "<br>");
+ 
+        resposta = !"senac";
+        document.write(resposta + "<br>");
+ 
+ 
+ 
+     </script>
+</body>
+</html>
+ 
+ 
+<!-- 1. Operador && (AND – E)
+ 
+Significa que as duas condições precisam ser verdadeiras (`true`) para que o resultado seja `true`.
+ 
+Observação: se um dos lados for `false`, o resultado será `false`.
+ 
+## 2. Operador || (OR – OU)
+ 
+Significa que pelo menos uma das condições precisa ser verdadeira para que o resultado seja `true`.
+ 
+Observação: se um dos lados for `true`, o resultado será `true`.
+ 
+## 3. Operador \! (NOT – NÃO)
+ 
+Significa inverter o resultado.
+ 
+- `!true` → false
+- `!false` → true
+ 
+## Observação importante sobre Strings
+ 
+ 
+No JavaScript:
+ 
+- `"senac"` é um valor verdadeiro (Truthy).
+- `""` é um valor falso (Falsy).
+ 
+Os operadores `&&` e `||` também podem retornar textos, e não apenas `true` ou `false`.
+ 
+Resumindo para finalizar a apresentação:
+ 
+- `&&` significa E.
+- `||` significa OU.
+- `!` significa NÃO, ou seja, inverte o resultado. -->
+ 
+
+ 
+ 

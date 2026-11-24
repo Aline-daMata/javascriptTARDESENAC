@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercio extra 02 cap 09</title>
+</head>
+<body>
+    <h1>Exercício extra 17</h1>
+    <p id="resultado"></p>
+    <script>
+        var computador = {
+            processador: 'Intel core i7',
+            memoria: '16 GB',
+            ssd: '500 gb',
+            motherboard: 'Asus TUF GAMMING B550M',
+            fonte: '600 W',
+            pcCompleto: function(){
+                return '<ul>' +
+                    '<li> <strong> Processador: </strong>' + this.processador + '</li>' +
+                    '<li> <strong> Memória: </strong>' + this.memoria + '</li>' + 
+                    '<li> <strong> SSD: </strong>' + this.ssd + '</li>' + 
+                    '<li> <strong> Placa Mãe: </strong>' + this.motherboard+ '</li>' +
+                    '<li> <strong> Fonte: </strong>' + this.fonte + '</li>' +
+                   '</ul>'
+            }
+        }
+        document.write (computador.pcCompleto());
+        
+    </script>
+    
+</body>
+</html>

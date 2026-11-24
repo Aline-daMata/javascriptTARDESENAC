@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM - Inserir elementos (Exemplo 2)</title>
+</head>
+<body>
+    <h1>DOM - Inserção de elementos</h1>
+    <ul>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Quarto</li>
+    </ul>
+
+    <script>
+        // Criar o elemento li com o texto Terceiro
+        var novoLi = document.createElement('li');
+        var textoLi = document.createTextNode('Terceiro');
+        novoLi.appendChild(textoLi);
+
+        // Buscar a lista na página
+        var lista = document.getElementsByTagName('ul')[0];
+
+        // Recuperando os itens
+        var itens = document.getElementsByTagName('li');
+
+        // Inserindo com insertBefore() – antes
+        lista.insertBefore(novoLi, itens[2]);
+    </script>
+</body>
+</html>

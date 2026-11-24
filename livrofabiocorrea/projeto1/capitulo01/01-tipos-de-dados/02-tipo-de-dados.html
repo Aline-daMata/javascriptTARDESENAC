@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo de dados</title>
+</head>
+<body>
+    <h1>Tipo de dados</h1>
+    <p id="texto1">O valor de a é: </p>
+    <p id="texto2">O valor de b é: </p>
+    <p id="texto3">O valor de c é: </p>
+    <p id="texto4">O valor de d é: </p>
+    <p id="texto5">O valor de e é: </p>
+    <p id="texto6">O valor de f é: </p>
+    <p id="texto7">O valor de g é: </p>
+    
+    <script>
+        // Definindo as variáveis 
+        var a;
+        var b = 1;
+        var c = [1, 2, 3, 4, 5];
+        var d = ['verde', 'Amarelo', 'Azul', 'Branco'];
+        var e = 'JavaScript';
+        var f = false;
+        var g = null;
+        
+        // Mostrando o conteúdo de cada variável
+        document.getElementById('texto1').innerHTML += a; // Aparecerá "undefined"
+        document.getElementById('texto2').innerHTML += b; // 1
+        document.getElementById('texto3').innerHTML += c[2]; // 3 (terceiro item do array)
+        document.getElementById('texto4').innerHTML += d; // verde,Amarelo,Azul,Branco
+        document.getElementById('texto5').innerHTML += e; // JavaScript
+        document.getElementById('texto6').innerHTML += f; // false
+        document.getElementById('texto7').innerHTML += g; // null
+    </script>
+</body>
+</html>

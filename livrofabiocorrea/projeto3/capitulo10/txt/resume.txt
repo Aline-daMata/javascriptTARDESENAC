@@ -1,0 +1,6 @@
+A utilização de DOM abrange diversas areas da programação,
+sendo aclamada mundialmente e altamente utilizada, seja para montar o frontend 
+dentro do script e comandá-lo, seja para organizar melhor
+a seleção de dados.
+Ferramenta completa em js, que para o desenvolvimento de diversos
+tipos de sistema se torna imprescindivel.

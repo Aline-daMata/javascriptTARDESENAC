@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercício extra 19</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Cores do cômodo: escuro (apagado) e quente (aceso) */
+        :root {
+            --parede-escura: #161b2e;
+            --parede-clara: #fbe9c6;
+            --luz: #ffc94d;
+            --texto-escuro: #c7cbe0;
+            --texto-claro: #3a2a12;
+        }
+
+        * { box-sizing: border-box; margin: 0; }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+            background: var(--parede-escura);
+            color: var(--texto-escuro);
+            transition: background 0.6s ease, color 0.6s ease;
+        }
+
+        /* Quando a classe "acesa" está no body, o cômodo "ilumina" */
+        body.acesa {
+            background: radial-gradient(circle at 50% 40%, #fff6dc 0%, var(--parede-clara) 35%, #e9c98d 100%);
+            color: var(--texto-claro);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        /* Fio que "segura" a lâmpada */
+        .fio {
+            width: 2px;
+            height: 60px;
+            background: currentColor;
+            opacity: 0.4;
+            margin-bottom: -1.5rem;
+        }
+
+        #lampada {
+            width: 160px;
+            cursor: pointer;
+            border-radius: 50%;
+            filter: grayscale(0.6) brightness(0.7);
+            transition: filter 0.4s ease, transform 0.2s ease;
+        }
+
+        #lampada:hover { transform: scale(1.05); }
+
+        #lampada:focus-visible {
+            outline: 3px solid var(--luz);
+            outline-offset: 6px;
+        }
+
+        /* Brilho em volta da lâmpada acesa */
+        body.acesa #lampada {
+            filter: drop-shadow(0 0 30px var(--luz)) drop-shadow(0 0 80px var(--luz));
+        }
+
+        #status {
+            font-size: 1.1rem;
+            opacity: 0.85;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            body, #lampada { transition: none; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício extra 19</h1>
+
+    <div class="fio"></div>
+    <img id="lampada" src="luz-apagada.gif" alt="Lâmpada apagada"
+         tabindex="0" role="button">
+
+    <p id="status">Clique na lâmpada para acender</p>
+
+    <script>
+        // Guarda o estado atual da lâmpada (false = apagada, true = acesa)
+        var acesa = false;
+
+        // Busca os elementos que serão alterados
+        var lampada = document.getElementById('lampada');
+        var aviso = document.getElementById('status');
+
+        // Função que troca o estado da lâmpada
+        function alternaLampada() {
+            // Inverte o estado: se estava apagada, acende; se estava acesa, apaga
+            acesa = !acesa;
+
+            if (acesa) {
+                // Troca a imagem para a lâmpada acesa
+                lampada.src = 'luz-acesa.gif';
+                lampada.alt = 'Lâmpada acesa';
+                aviso.textContent = 'Clique de novo para apagar';
+            } else {
+                // Volta a imagem para a lâmpada apagada
+                lampada.src = 'luz-apagada.gif';
+                lampada.alt = 'Lâmpada apagada';
+                aviso.textContent = 'Clique na lâmpada para acender';
+            }
+
+            // Liga/desliga a classe "acesa" no body para mudar o fundo da página
+            document.body.classList.toggle('acesa', acesa);
+        }
+
+        // Evento de clique na imagem
+        lampada.onclick = alternaLampada;
+
+        // Permite acender/apagar também pelo teclado (Enter ou Espaço)
+        lampada.onkeydown = function (evento) {
+            if (evento.key === 'Enter' || evento.key === ' ') {
+                evento.preventDefault();
+                alternaLampada();
+            }
+        };
+    </script>
+</body>
+</html>

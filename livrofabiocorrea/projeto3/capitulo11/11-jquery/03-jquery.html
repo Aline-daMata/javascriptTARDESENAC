@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de jquery</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        div {
+            max-width: 450px;
+            margin: 0 auto;
+            position: relative;
+        }
+        label {
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            box-sizing: border-box;
+            border: 1px solid #555555;
+            border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: transparent;
+            position: relative;
+            z-index: 2;
+        }
+        /* Posiciona o texto vermelho dentro do input */
+        .erro {
+            color: #b22222;
+            font-size: 13px;
+            position: relative;
+            top: -25px;
+            left: 12px;
+            z-index: 1;
+        }
+        /* Posiciona o texto vermelho dentro do textarea (que é mais alto) */
+        .erro2 {
+            color: #b22222;
+            font-size: 13px;
+            position: relative;
+            top: -125px;
+            left: 12px;
+            z-index: 1;
+        }
+        input[type="button"] {
+            padding: 8px 16px;
+            border: 1px solid #555555;
+            border-radius: 6px;
+            background-color: #efefef;
+            cursor: pointer;
+        }
+ 
+        input[type="button"]:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça seu cadastro</h1>
+ 
+    <div>
+        <form id="form1">
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome"><br>
+            <span class="erro" id="erroNome"></span><br>
+ 
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email"><br>
+            <span class="erro" id="erroEmail"></span><br>
+ 
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" rows="8"></textarea>
+            <br>
+            <span class="erro2" id="erroMensagem"></span><br>
+ 
+            <input type="button" name="salvar" id="salvar" value="Salvar">
+        </form>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.8.0.min.js" integrity="sha256-Qsm+tn0R947bY3ltDZv7B00PwaILR61y/Lf7Dz3Gpv4=" crossorigin="anonymous"></script>
+ 
+    <script>
+            $(document).ready(function(){
+        // Limpar os campos de erro assim que tiver texto
+             $('#nome, #email, #mensagem').keydown(function(){
+             $('.erro').text('');
+             $('.erro2').text('');
+            });
+ 
+        // Ao clicar no botão salvar obtém-se os campos
+             $('#salvar').click(function(){
+            var nome = $('#nome');
+            var email = $('#email');
+            var mensagem = $('#mensagem');
+ 
+        // Verifica se os três campos estão vazios
+                if(!nome.val() && !email.val() && !mensagem.val()){
+             $('#erroNome').text('Campo obrigatório!');
+                nome.focus();
+            }
+            else if(!nome.val()){
+        // Verifica se o campo nome está vazio
+             $('#erroNome').text('Campo obrigatório!');
+                nome.focus();
+            } else if(!email.val()){
+        // Verifica se o campo email está vazio
+             $('#erroEmail').text('Campo obrigatório!');
+                email.focus();
+            } else if(!mensagem.val()){
+        // Verifica se o campo mensagem está vazio
+             $('#erroMensagem').text('Campo obrigatório!');
+                mensagem.focus();
+             } else {
+        // Valida os campos
+             $('#nome').after('', null);
+             $('#email').after('', null);
+             $('#mensagem').after('', null);
+             $('#form1').submit();
+                }
+            });
+        });
+    </script>
+ 
+</body>
+</html>

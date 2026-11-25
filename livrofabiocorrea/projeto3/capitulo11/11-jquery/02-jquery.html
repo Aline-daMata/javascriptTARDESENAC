@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de jQuery</title>
+   
+    <style>
+        .texto {
+            display: none;
+        }
+        .texto {
+            display: none;
+            background-color: #f5e6d3;
+            padding: 12px 15px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 560px;
+            line-height: 1.35;
+            overflow: hidden;
+        }
+ 
+    </style>
+ 
+ 
+</head>
+<body>
+    <h1>Exemplo de jQuery</h1>
+    <p> O que é <a href="#" id="link1">jQuery</a></p>
+    <p id="texto1" class="texto">jQuery é uma biblioteca de funções Javascript que interage com o HTML,desenvoldida para simplificar os scripts interpretados no navegador do cliente. Usada por cerca de 74.4% dos 10mil sites mais visitados do mundo, jQuery é a mmais popular das bibliotecas Javascript.</p>
+ 
+    <p>O que é <a href="#" id="link2">HTML</a></p>
+    <p id="texto2" class="texto">HTML abreviação para a expressão inglesa HyperText Markup Langue, que significa: "Linguagem de Marcação de Hipertexto" é uma linguagem de marcação utilizada na construção depáginas na Web. Documentos HTML podem ser interpretados por navegadores.</p>
+ 
+ 
+    <script src="https://code.jquery.com/jquery-3.8.0.min.js" integrity="sha256-Qsm+tn0R947bY3ltDZv7B00PwaILR61y/Lf7Dz3Gpv4=" crossorigin="anonymous"></script>
+ 
+    <script>
+      $(document).ready(function(){
+        $('#link1').click(function(){
+          $('#texto1').animate({width: 'toggle'});
+ 
+});
+ 
+       $('#link2').click(function(){
+          $('#texto2').animate({width: 'toggle'});
+});
+ 
+});
+ 
+ 
+ 
+    </script>
+</body>
+</html>

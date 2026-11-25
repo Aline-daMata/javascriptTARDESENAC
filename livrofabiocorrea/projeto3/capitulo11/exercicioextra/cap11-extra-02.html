@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício extra 22</title>
+  <!-- Importando o arquivo correto do jQuery via CDN -->
+  <script src="https://jquery.com"></script>
+  <style>
+    p {
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercício extra 22</h1>
+  <p>A chuva cai lá fora. O som acalma a casa. O céu fica cinza. Tudo parece mais lento.</p>
+  <p>É um bom momento para pausar. Um livro espera na mesa. As páginas viram sem pressa. O tempo passa diferente.</p>
+  <p>Logo as nuvens vão embora. O sol volta a aparecer. A tarde ganha nova cor. A vida retoma o movimento.</p>
+
+  <script src="https://code.jquery.com/jquery-3.8.0.min.js" integrity="sha256-Qsm+tn0R947bY3ltDZv7B00PwaILR61y/Lf7Dz3Gpv4=" crossorigin="anonymous"></script>
+ 
+ <script>
+    $(document).ready(function() {
+  $('p').on('click', function() {
+    $(this).fadeOut(); // Desaparece suavemente (ou use .hide() para sumir na hora)
+  });
+});
+
+  </script>
+
+</body>
+</html>

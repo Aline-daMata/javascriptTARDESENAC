@@ -1,0 +1,8 @@
+Aprendemos a utilizar a biblioteca jQuery para simplificar a manipulação
+de elementos HTML, eventos e estilos, deixando o código JavaScript mais 
+curto e fácil de manter.
+Como importar e carregar a ferramenta corretamente no projeto seguindo
+boas práticas de desenvolvimento. Explorando a criação de efeitos visuais
+e animações, como o método slideToggle() e alternativas para 
+movimentos horizontais e descobrimos como aplicar esses recursos
+para validar formulários de forma mais simples e intuitiva.

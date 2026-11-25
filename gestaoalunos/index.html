@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gestão de Alunos</title>
+<link rel="stylesheet" href="./css/style.css" />
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+<script src="./js/script.js" defer></script>
+
+</head>
+<body>
+<main class="container">
+<h1>Gestão de Alunos</h1>
+ 
+    <form id="form-aluno" class="card">
+<input type="hidden" id="aluno-id" />
+<div class="campo">
+<label for="nome">Nome</label>
+<input type="text" id="nome" required placeholder="Ex.: Ana Souza" />
+</div>
+<div class="campo">
+<label for="curso">Curso</label>
+<input type="text" id="curso" required placeholder="Ex.: Full Stack" />
+</div>
+<div class="campo">
+<label for="turma">Turma</label>
+<input type="text" id="turma" required placeholder="Ex.: Noite A" />
+</div>
+<div class="acoes">
+<button type="submit" id="btn-salvar">Adicionar Aluno</button>
+<button type="button" id="btn-cancelar" class="secundario" hidden>Cancelar</button>
+</div>
+</form>
+ 
+    <section class="card">
+<div class="barra-filtro">
+<label for="filtro-busca">Filtrar registros</label>
+<input type="search" id="filtro-busca" placeholder="Buscar por nome, curso ou turma..." />
+</div>
+ 
+      <table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Curso</th>
+<th>Turma</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody id="tabela-alunos"></tbody>
+</table>
+</section>
+</main>
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+ 
+body {
+  background-color: #f4f6f9;
+  color: #1f2937;
+  padding: 24px;
+}
+ 
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+ 
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+ 
+.campo,
+.barra-filtro {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+ 
+input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+ 
+button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+}
+ 
+button:hover {
+  background-color: #1d4ed8;
+}
+ 
+button.secundario {
+  background-color: #64748b;
+}
+ 
+button.acao-editar {
+  background-color: #0d9488;
+  margin-right: 6px;
+}
+ 
+button.acao-excluir {
+  background-color: #dc2626;
+}
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}

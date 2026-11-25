@@ -1,0 +1,11 @@
+Na aula prática aprendi a estruturar um formulário e
+uma tabela dinâmica conectada a eventos do DOM.
+Vi como o jQuery simplifica a seleção de elementos,
+a leitura de campos e a atualização de linhas na tela
+sem recarregar a página. Pratiquei o fluxo de adicionar
+novos registros e carregar dados existentes de volta no 
+formulário para edição. Também compreendi como filtrar itens
+em tempo real conforme o usuário digita no campo de busca.
+Por fim, reforcei a separação entre marcação, estilo
+e comportamento para manter o código organizado e 
+fácil de manter.

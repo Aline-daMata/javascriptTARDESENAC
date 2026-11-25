@@ -1,0 +1,6 @@
+Estudamos o conceito de Document Object Model (DOM)
+para conectar elementos HTML diretamente com o JavaScript. 
+Estudamos e utilizamos métodos como getElementById para mencionar elementos 
+da página e addEventListener para escutar o evento destes elementos. 
+Manipulamos alteração de atributos com src de imagens interativas e criamos funções lógicas para que 
+pudéssemos controlar o comportamento visual do projeto de maneira mais dinâmica. 
